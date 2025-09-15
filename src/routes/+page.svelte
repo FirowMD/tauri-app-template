@@ -34,19 +34,21 @@
     <span class="text-lg font-bold text-primary-300 tracking-wide truncate">Tauri Skeleton</span>
     <span class="ml-2 px-2 py-0.5 rounded bg-surface-600 text-surface-50 text-xs font-mono">v3</span>
   </div>
-  <div class="flex-1 flex justify-end overflow-x-auto gap-1 flex-nowrap scrollbar-thin bg-surface-800/80 rounded-md p-1 backdrop-blur-md ml-4">
-    {#each skeletonThemes as theme}
-      <button
-        type="button"
-        class="btn btn-sm rounded-md border-none px-2
-          {currentTheme === theme ? 'glass bg-primary-600 text-primary-50 outline outline-2 outline-primary-400' : 'preset-filled-surface-700 hover:brightness-110 text-surface-200'}"
-        aria-pressed={currentTheme === theme}
-        onclick={() => switchTheme(theme)}
-        title={`Switch to ${theme} theme`}
-      >
-        {theme}
-      </button>
-    {/each}
+  <div class="flex-1 overflow-x-auto bg-surface-800/80 rounded-md p-1 backdrop-blur-md ml-4 scrollbar-thin scrollbar-track-surface-700 scrollbar-thumb-surface-500">
+    <div class="flex gap-1 flex-nowrap min-w-max">
+      {#each skeletonThemes as theme}
+        <button
+          type="button"
+          class="btn btn-sm rounded-md border-none px-2 flex-shrink-0
+            {currentTheme === theme ? 'glass bg-primary-600 text-primary-50 outline outline-2 outline-primary-400' : 'preset-filled-surface-700 hover:brightness-110 text-surface-200'}"
+          aria-pressed={currentTheme === theme}
+          onclick={() => switchTheme(theme)}
+          title={`Switch to ${theme} theme`}
+        >
+          {theme}
+        </button>
+      {/each}
+    </div>
   </div>
 </header>
 
