@@ -19,16 +19,16 @@
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "@skeletonlabs/skeleton": "^4.2.4",
-    "@skeletonlabs/skeleton-svelte": "^4.2.4",
+    "@skeletonlabs/skeleton": "^4.3.2",
+    "@skeletonlabs/skeleton-svelte": "^4.3.2",
     "@sveltejs/adapter-static": "^3.0.10",
     "@sveltejs/kit": "^2.48.4",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "@tailwindcss/typography": "^0.5.19",
-    "@tauri-apps/cli": "^2.9.3",
+    "@tauri-apps/cli": "^2.9.4",
     "lucide-svelte": "^0.553.0",
-    "svelte": "^5.43.4",
-    "svelte-check": "^4.3.3",
+    "svelte": "^5.43.6",
+    "svelte-check": "^4.3.4",
     "typescript": "~5.9.3",
     "vite": "^7.2.2"
   }
