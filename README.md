@@ -1,6 +1,6 @@
-# Tauri + SvelteKit + Skeleton v4 Template
+# FocusBoard (Tauri + SvelteKit + Skeleton v4)
 
-A starter desktop app using Tauri 2, Svelte 5, Skeleton UI v4, Tailwind CSS, and Vite.
+A local-first desktop task manager built with a minimal stack.
 
 ![App Screenshot](./screenshot.png)
 
@@ -9,8 +9,18 @@ A starter desktop app using Tauri 2, Svelte 5, Skeleton UI v4, Tailwind CSS, and
 - Svelte 5
 - Skeleton v4 (`@skeletonlabs/skeleton` and `@skeletonlabs/skeleton-svelte`)
 - Tailwind CSS v4 (via `@tailwindcss/vite`)
-- Vite 6
+- Vite 7
+- `@tauri-apps/plugin-store` for local persistence
+- `tauri-plugin-window-state` for window size/position restore
+- Zod for task form validation
 - Bun
+
+## Features
+- Create tasks with title, notes, and optional due date
+- Mark complete/incomplete, delete tasks, and clear completed tasks
+- Filter by all, active, and completed
+- Persist tasks and app preferences locally
+- Persist selected theme and window state across restarts
 
 ## Getting Started
 
